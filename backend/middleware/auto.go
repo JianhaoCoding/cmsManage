@@ -12,7 +12,7 @@ var resData map[string]interface{}
 func TokenAuth() gin.HandlerFunc {
 	return func(c *gin.Context) {
 		// 过滤不需要验证的请求
-		if c.Request.URL.Path == "/login" || c.Request.URL.Path == "/upload" || c.Request.URL.Path == "/upload/image" || c.Request.URL.Path == "/upload/file" || c.Request.URL.Path == "/upload/video" || c.Request.URL.Path == "/upload/music" || c.Request.URL.Path == "/region/options" {
+		if c.Request.URL.Path == "/login" {
 			c.Next()
 			return
 		}

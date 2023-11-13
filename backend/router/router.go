@@ -62,6 +62,7 @@ func SetupRouter() *gin.Engine {
 	r.POST("login", controllers.Login)
 
 	// 管理员操作
+	r.GET("/adminer", adminer.Adminer)
 	r.GET("/menurules", adminer.MenuAuths)                         // 用户Menu列表接口
 	r.GET("/adminer/list", adminer.AdminerList)                    // 管理员列表
 	r.GET("/adminer/show/:adminer_id", adminer.AdminerShow)        // 管理员信息

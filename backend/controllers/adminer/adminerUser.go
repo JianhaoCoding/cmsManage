@@ -8,6 +8,31 @@ import (
 	"strconv"
 )
 
+// Adminer 当前登录管理员基础信息
+func Adminer(c *gin.Context) {
+	// 获取用户ID
+	tmpId, exists := c.Get("adminer_id")
+	if !exists {
+		helpers.EndRequest(c, -403, helpers.BuildNullRequestStruct(), "非法请求1")
+		return
+	}
+
+	adminerId, ok := tmpId.(uint)
+	if !ok {
+		helpers.EndRequest(c, -403, helpers.BuildNullRequestStruct(), "非法请求2")
+		return
+	}
+
+	// 查询管理员信息
+	adminerInfo, aErr := models.GetAdminerById(adminerId)
+	if aErr != nil {
+		helpers.EndRequest(c, -1, resData, aErr.Error())
+		return
+	}
+
+	helpers.EndRequest(c, 200, adminerInfo, "获取成功")
+}
+
 // AdminerShow 管理员详情
 func AdminerShow(c *gin.Context) {
 	// 获取并转换adminerId为uint
