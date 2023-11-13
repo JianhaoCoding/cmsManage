@@ -1,0 +1,112 @@
+import Vue from 'vue'
+import {
+  Button,
+  Form,
+  FormItem,
+  Input,
+  Select,
+  Option,
+  OptionGroup,
+  Checkbox,
+  CheckboxGroup,
+  DatePicker,
+  TimePicker,
+  Switch,
+  Upload,
+  Message,
+  MessageBox,
+  Loading,
+  Notification,
+  Container,
+  Header,
+  Aside,
+  Main,
+  Menu,
+  Submenu,
+  MenuItemGroup,
+  MenuItem,
+  Breadcrumb,
+  BreadcrumbItem,
+  Card,
+  Row,
+  Col,
+  Table,
+  TableColumn,
+  Tabs,
+  TabPane,
+  Tag,
+  Tree,
+  Alert,
+  Pagination,
+  Badge,
+  Popover,
+  Tooltip,
+  Cascader,
+  Dialog,
+  Drawer,
+  Link,
+  Steps,
+  Step,
+  Progress,
+  Spinner,
+  Popconfirm,
+  Image,
+  Radio,
+  RadioGroup,
+  RadioButton
+} from 'element-ui'
+
+Vue.use(Button)
+Vue.use(Form)
+Vue.use(FormItem)
+Vue.use(Input)
+Vue.use(Select)
+Vue.use(Option)
+Vue.use(OptionGroup)
+Vue.use(Checkbox)
+Vue.use(CheckboxGroup)
+Vue.use(DatePicker)
+Vue.use(TimePicker)
+Vue.use(Switch)
+Vue.use(Upload)
+Vue.use(Container)
+Vue.use(Header)
+Vue.use(Aside)
+Vue.use(Main)
+Vue.use(Menu)
+Vue.use(Submenu)
+Vue.use(MenuItemGroup)
+Vue.use(MenuItem)
+Vue.use(Breadcrumb)
+Vue.use(BreadcrumbItem)
+Vue.use(Card)
+Vue.use(Row)
+Vue.use(Col)
+Vue.use(Table)
+Vue.use(TableColumn)
+Vue.use(Tabs)
+Vue.use(TabPane)
+Vue.use(Tag)
+Vue.use(Tree)
+Vue.use(Alert)
+Vue.use(Pagination)
+Vue.use(Badge)
+Vue.use(Popover)
+Vue.use(Tooltip)
+Vue.use(Cascader)
+Vue.use(Loading.directive)
+Vue.use(Dialog)
+Vue.use(Drawer)
+Vue.use(Link)
+Vue.use(Steps)
+Vue.use(Step)
+Vue.use(Progress)
+Vue.use(Spinner)
+Vue.use(Popconfirm)
+Vue.use(Image)
+Vue.use(Radio)
+Vue.use(RadioGroup)
+Vue.use(RadioButton)
+Vue.prototype.$message = Message
+Vue.prototype.$confirm = MessageBox.confirm
+Vue.prototype.$notify = Notification
