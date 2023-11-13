@@ -1,0 +1,19 @@
+server:
+  port: 8082
+database:
+  type: mysql
+  user: root
+  password: 123456
+  dbname: cms
+  local: 127.0.0.1
+  port: 3306
+jwt:
+  secret: d62fb11d797fedc34adfd0accc4e7c5d77d0cae7
+redis:
+  local: 127.0.0.1
+  port: 6379
+  password:
+  db: 0
+  poolsize: 0
+  minidleconns: 5
+  maxretries: 2
